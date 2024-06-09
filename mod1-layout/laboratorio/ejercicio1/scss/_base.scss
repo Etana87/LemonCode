@@ -1,0 +1,19 @@
+$first-color: red;
+$second-color: blue;
+$third-color: green;
+$text-color: black;
+$text-color-modificado: adjust-hue($text-color, 15deg);
+$font-base-size: 1.3em;
+$link-font-size: 1.5em;
+$grid-item-base-color: darkblue;
+$grid-breakpoint: 800px;
+
+@mixin shadow-effect($shadow: 5px) {
+  box-shadow: 6px 10px $shadow rgba(0, 0, 0, 0.69);
+
+  &:hover {
+    box-shadow: 3px 5px $shadow rgba(0, 0, 0, 0.69);
+  }
+}
+
+

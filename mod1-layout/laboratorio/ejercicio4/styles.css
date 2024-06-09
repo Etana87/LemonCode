@@ -1,0 +1,50 @@
+.container {
+  width: 500px;
+  display: block;
+}
+.container .card {
+  max-width: 250px;
+  display: block;
+  font-family: Calibri;
+  font-size: 14px;
+  border: 1px solid #d6d6d6;
+}
+.container .card__img {
+  width: 100%;
+}
+.container .card__img img {
+  width: 100%;
+}
+.container .card__content {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-template-rows: 1fr;
+  grid-template-areas: "title title" "description description" ". publish" "button button";
+}
+.container .card__content .content__title {
+  grid-area: title;
+  margin: 10px 0;
+}
+.container .card__content .content__text {
+  grid-area: description;
+}
+.container .card__content .card__publish {
+  grid-area: publish;
+}
+.container .card__content .card__publish p {
+  font-weight: bold;
+}
+.container .card__content .card__publish p span {
+  font-weight: normal;
+  color: #7bbe46;
+}
+.container .card__content .content__btn {
+  grid-area: button;
+  padding: 10px;
+  background-color: #7bbe46;
+  color: #ffffff;
+  border: 1px solid #d6d6d6;
+}
+
+/*# sourceMappingURL=styles.css.map */

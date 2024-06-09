@@ -1,0 +1,24 @@
+.container {
+    .box {
+        color: #000000;
+        border-radius: 5px;
+
+        &.base {
+            background-color: #0024ff;
+        }
+        &.important {
+            background-color: #1700a6;
+        }
+        &.warning {
+            background-color: #6268df;
+        }
+        &.font {
+            font-family: Arial;
+        }
+        &.shadow {
+            -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+            -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+            box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+        }
+    }
+}

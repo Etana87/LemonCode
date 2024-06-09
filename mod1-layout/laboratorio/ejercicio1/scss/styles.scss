@@ -1,0 +1,124 @@
+@use "base" as *;
+
+.container-1 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+  .box {
+    padding: 25px 10px;
+    margin: 5px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &.base-color {
+        background: red;
+        color:#fff;
+    }
+  }
+
+
+  $i: 4;
+  @while $i >= 1 {
+    .darken-#{$i} {
+      background-color: darken($color: $first-color, $amount: $i * 10%);
+      color: darken($color: #fff, $amount: $i * 10%);
+    }
+
+    $i: $i - 1;
+  }
+
+  $i: 1;
+  @while $i <= 4 {
+    .lighten-#{$i} {
+      background-color: lighten($color: $first-color, $amount: $i * 10%);
+      color: lighten($color: #fff, $amount: $i * 10%);
+    }
+
+    $i: $i + 1;
+  }
+}
+
+.container-2 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+  .box {
+    padding: 25px 10px;
+    margin: 5px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &.base-color {
+        background: blue;
+        color:#fff;
+    }
+  }
+
+
+  $i: 4;
+  @while $i >= 1 {
+    .darken-#{$i} {
+      background-color: darken($color: $second-color, $amount: $i * 10%);
+      color: darken($color: #fff, $amount: $i * 10%);
+    }
+
+    $i: $i - 1;
+  }
+
+  $i: 1;
+  @while $i <= 4 {
+    .lighten-#{$i} {
+      background-color: lighten($color: $second-color, $amount: $i * 10%);
+      color: lighten($color: #fff, $amount: $i * 10%);
+    }
+
+    $i: $i + 1;
+  }
+}
+
+.container-3 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+  .box {
+    padding: 25px 10px;
+    margin: 5px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &.base-color {
+        background: green;
+        color:#fff;
+    }
+  }
+
+
+  $i: 4;
+  @while $i >= 1 {
+    .darken-#{$i} {
+      background-color: darken($color: $third-color, $amount: $i * 10%);
+      color: darken($color: #fff, $amount: $i * 10%);
+    }
+
+    $i: $i - 1;
+  }
+
+  $i: 1;
+  @while $i <= 4 {
+    .lighten-#{$i} {
+      background-color: lighten($color: $third-color, $amount: $i * 10%);
+      color: lighten($color: #fff, $amount: $i * 10%);
+    }
+
+    $i: $i + 1;
+  }
+}

@@ -1,0 +1,12 @@
+@use 'temaA.scss';
+
+.container {
+    font-family: 'Trebuchet MS';
+    max-width: 150px;
+    width: 100%;
+
+    .box {
+        display: block;
+        padding: 10px;
+    }
+}

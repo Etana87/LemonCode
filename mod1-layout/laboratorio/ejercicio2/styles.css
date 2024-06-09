@@ -1,0 +1,32 @@
+.container .box {
+  color: #000000;
+}
+.container .box.base {
+  background-color: #ff0000;
+}
+.container .box.important {
+  background-color: #a60000;
+}
+.container .box.warning {
+  background-color: #df6262;
+}
+.container .box.font :first-of-type {
+  font-family: Arial;
+}
+.container .box.shadow {
+  -webkit-box-shadow: -10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: -10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.container {
+  font-family: "Trebuchet MS";
+  max-width: 150px;
+  width: 100%;
+}
+.container .box {
+  display: block;
+  padding: 10px;
+}
+
+/*# sourceMappingURL=styles.css.map */
